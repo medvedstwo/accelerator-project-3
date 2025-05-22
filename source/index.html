@@ -5,17 +5,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Internship</title>
+    <link rel="stylesheet" href="sass/vendor/nebo.css">
     <link rel="stylesheet" href="sass/style.scss">
   </head>
 
   <body class="page-body">
+    <div class="hero" data-test="hero">
+      <header class="header">
+        <div class="header__wrapper wrapper">
+          <div class="logo">
+            <div class="logo__wrapper">
+              <svg width="30" height="30">
+                <use href="/__spritemap#sprite-logo"></use>
+              </svg>
+            </div>
+          </div>
+          <nav class="nav">
+            <div class="nav__wrapper">
+              <button class="button nav__button" type="button">
+                <span class="nav__button-desc">Меню</span>
+                <span class="nav__button-icon">
+                  <!-- написать бургер -->
+                </span>
+              </button>
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="link" href="#about">О проекте</a>
+                </li>
+                <li class="nav__item">
+                  <a class="link" href="#programs">Программы</a>
+                  <ul class="nav__sublist">
+                    <li class="nav__subitem">
+                      <a class="link" href="#programs">Стажировки</a>
+                    </li>
+                    <li class="nav__subitem">
+                      <a class="link" href="#programs">Волонтёрство</a>
+                    </li>
+                    <li class="nav__subitem">
+                      <a class="link" href="#programs">Учёба</a>
+                    </li>
+                    <li class="nav__subitem">
+                      <a class="link" href="#programs">Религия</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav__item">
+                  <a class="link" href="#grant">Как поехать</a>
+                </li>
+                <li class="nav__item">
+                  <a class="link" href="#reviews">Отзывы</a>
+                </li>
+                <li class="nav__item">
+                  <a class="link" href="#news">Новости</a>
+                  <ul class="nav__sublist">
+                    <li class="nav__subitem">
+                      <a class="link" href="#news">Общее</a>
+                    </li>
+                    <li class="nav__subitem">
+                      <a class="link" href="#news">Волонтёрство</a>
+                    </li>
+                    <li class="nav__subitem">
+                      <a class="link" href="#news">Стажировки</a>
+                    </li>
+                    <li class="nav__subitem">
+                      <a class="link" href="#news">Карьера</a>
+                    </li>
+                    <li class="nav__subitem">
+                      <a class="link" href="#news">путешествия</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <div class="swiper hero-swiper">
+        <div class="swiper-wrapper hero-swiper__wrapper">
+          <div class="swiper-slide hero-swiper__slide hero-slide">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/hero/slide-1/hero-desktop@1x.webp 1x, img/hero/slide-1/hero-desktop@2x.webp 2x" width="1440" height="800">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/hero/slide-1/hero-tablet@1x.webp 1x, img/hero/slide-1/hero-tablet@2x.webp 2x" width="768" height="1024">
+              <source type="image/webp" media="(min-width: 320px)" srcset="img/hero/slide-1/hero-mobile@1x.webp 1x, img/hero/slide-1/hero-mobile@2x.webp 2x" width="320" height="568">
+              <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/hero/slide-1/hero-desktop@1x.jpg 1x, img/hero/slide-1/hero-desktop@2x.jpg 2x" width="1440" height="800">
+              <source type="image/jpeg" media="(min-width: 768px)" srcset="img/hero/slide-1/hero-tablet@1x.jpg 1x, img/hero/slide-1/hero-tablet@2x.jpg 2x" width="768" height="1024">
+              <img src="img/hero/slide-1/hero-tablet@1x.jpg" srcset="img/hero/slide-1/hero-tablet@2x.jpg 2x" alt="Кудрявая девушка в желтой рубашке и с документами в руках." width="320" height="568">
+            </picture>
+          </div>
+          <div class="swiper-slide hero-swiper__slide hero-slide">
+
+          </div>
+          <div class="swiper-slide hero-swiper__slide hero-slide">
+
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
     <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
+    <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
       <use href="/__spritemap#sprite-user"></use>
-    </svg>
+    </svg> -->
     <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="hero">hero</div>
+    <!-- <div data-test="hero">hero</div> -->
     <div data-test="about">about</div>
     <div data-test="programs">programs</div>
     <div data-test="grant">grant</div>
