@@ -2,6 +2,18 @@
 // ---------------------------------
 
 @import "vendor/normalize";
-@import "./common/variables";
-@import "./common/fonts";
-@import "./common/global";
+@import "./vendor/nebo.css";
+
+// common 
+@import "./common/variables.scss";
+@import "./common/mixins.scss";
+@import "./common/fonts.scss";
+@import "./common/global.scss";
+
+// blocks
+
+@import "./blocks/wrapper.scss";
+@import "./blocks/button.scss";
+@import "./blocks/list.scss";
+@import "./blocks/title.scss";
+@import "./blocks/about.scss";

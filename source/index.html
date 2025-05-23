@@ -10,7 +10,7 @@
   </head>
 
   <body class="page-body">
-    <div class="hero" data-test="hero">
+    <section class="hero" data-test="hero">
       <header class="header">
         <div class="header__wrapper wrapper">
           <div class="logo">
@@ -22,9 +22,9 @@
           </div>
           <nav class="nav">
             <div class="nav__wrapper">
-              <button class="button nav__button" type="button">
+              <button class="button button--primary nav__button" type="button">
                 <span class="nav__button-desc">Меню</span>
-                <span class="nav__button-icon">
+                <span class="button__round nav__button-icon">
                   <!-- написать бургер -->
                 </span>
               </button>
@@ -91,17 +91,113 @@
               <source type="image/jpeg" media="(min-width: 768px)" srcset="img/hero/slide-1/hero-tablet@1x.jpg 1x, img/hero/slide-1/hero-tablet@2x.jpg 2x" width="768" height="1024">
               <img src="img/hero/slide-1/hero-tablet@1x.jpg" srcset="img/hero/slide-1/hero-tablet@2x.jpg 2x" alt="Кудрявая девушка в желтой рубашке и с документами в руках." width="320" height="568">
             </picture>
+            <div class="hero-swiper__content">
+              <div class="hero-swiper__content-top">
+                <h2 class="hero-slide__title title">Глобальный профессиональный опыт обучения за рубежом</h2>
+              </div>
+              <div class="hero-swiper__content-middle">
+                <p>Погрузитесь в академическую программу, проходя практику в разных городах, ощущая настоящий студенческий стиль жизни!</p>
+              </div>
+              <div class="hero-swiper__content-bottom">
+                <button class="button button--primary button-about" type="button">
+                  <span class="button__text">Подробнее</span>
+                  <span class="button__icon"></span>
+                </button>
+              </div>
+            </div>
           </div>
           <div class="swiper-slide hero-swiper__slide hero-slide">
-
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/hero/slide-2/hero-desktop@1x.webp 1x, img/hero/slide-2/hero-desktop@2x.webp 2x" width="1440" height="800">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/hero/slide-2/hero-tablet@1x.webp 1x, img/hero/slide-2/hero-tablet@2x.webp 2x" width="768" height="1024">
+              <source type="image/webp" media="(min-width: 320px)" srcset="img/hero/slide-2/hero-mobile@1x.webp 1x, img/hero/slide-2/hero-mobile@2x.webp 2x" width="320" height="568">
+              <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/hero/slide-2/hero-desktop@1x.jpg 1x, img/hero/slide-2/hero-desktop@2x.jpg 2x" width="1440" height="800">
+              <source type="image/jpeg" media="(min-width: 768px)" srcset="img/hero/slide-2/hero-tablet@1x.jpg 1x, img/hero/slide-2/hero-tablet@2x.jpg 2x" width="768" height="1024">
+              <img src="img/hero/slide-2/hero-tablet@1x.jpg" srcset="img/hero/slide-2/hero-tablet@2x.jpg 2x" alt="4 человека на переднем плане, а пятый обнимакт их сзвди." width="320" height="568">
+            </picture>
+            <div class="hero-swiper__content">
+              <div class="hero-swiper__content-top">
+                <h2 class="hero-slide__title title">Волонтёрские программы — внесите свой вклад в общество</h2>
+              </div>
+              <div class="hero-swiper__content-middle">
+                <p>Возможности для преподавания, органического сельского хозяйства, устойчивого образа жизни и другое.</p>
+              </div>
+              <div class="hero-swiper__content-bottom">
+                <button class="button button--primary button-about" type="button">
+                  <span class="button__text">Подробнее</span>
+                  <span class="button__icon"></span>
+                </button>
+              </div>
+            </div>
           </div>
           <div class="swiper-slide hero-swiper__slide hero-slide">
-
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/hero/slide-3/hero-desktop@1x.webp 1x, img/hero/slide-3/hero-desktop@2x.webp 2x" width="1440" height="800">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/hero/slide-3/hero-tablet@1x.webp 1x, img/hero/slide-3/hero-tablet@2x.webp 2x" width="768" height="1024">
+              <source type="image/webp" media="(min-width: 320px)" srcset="img/hero/slide-3/hero-mobile@1x.webp 1x, img/hero/slide-3/hero-mobile@2x.webp 2x" width="320" height="568">
+              <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/hero/slide-3/hero-desktop@1x.jpg 1x, img/hero/slide-3/hero-desktop@2x.jpg 2x" width="1440" height="800">
+              <source type="image/jpeg" media="(min-width: 768px)" srcset="img/hero/slide-3/hero-tablet@1x.jpg 1x, img/hero/slide-3/hero-tablet@2x.jpg 2x" width="768" height="1024">
+              <img src="img/hero/slide-3/hero-tablet@1x.jpg" srcset="img/hero/slide-3/hero-tablet@2x.jpg 2x" alt="Две девушки и мужчина смотрят в планшет." width="320" height="568">
+            </picture>
+            <div class="hero-swiper__content">
+              <div class="hero-swiper__content-top">
+                <h2 class="hero-slide__title title">Программы стажировок в крупнейших компаниях мира</h2>
+              </div>
+              <div class="hero-swiper__content-middle">
+                <p>Получите незаменимый опыт работы в ведущих мировых компаниях и государственных организациях.</p>
+              </div>
+              <div class="hero-swiper__content-bottom">
+                <button class="button button--primary button-about" type="button">
+                  <span class="button__text">Подробнее</span>
+                  <span class="button__icon"></span>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
         <div class="swiper-pagination"></div>
       </div>
-    </div>
+    </section>
+    <main>
+      <section class="about">
+        <div class="about__wrapper wrapper">
+          <div class="about__inner">
+            <div class="about__content">
+              <h2 class="about__title title">О проекте «Стажировка»</h2>
+              <p>«Стажировка» — совместный проект правительств и волонтёрских бригад.</p>
+            </div>
+            <div class="about__content">
+              <h3>Наша цель</h3>
+              <p>Наша деятельность направлена на&nbsp;повышение квалификации молодых специалистов на ранних и средних стадиях карьеры, предоставляя им&nbsp;инструменты для решения сложных проблем, с которыми сталкиваются в мире. Цель центра — наделить этих людей способностью инициировать значимые изменения.</p>
+            </div>
+            <button class="button button--primary about__button">
+              <span class="button__text">Подробнее о проекте</span>
+              <span class="button__icon"></span>
+            </button>
+          </div>
+          <div class="about__inner about__inner--round about__inner--bg">
+            <ul class="about__list list list--round">
+              <li class="about__item">
+                <h3>Более 250 программ</h3>
+                <p>Учебных и рабочих, разной длительностью от 3 месяцев до 1 года</p>
+              </li>
+              <li class="about__item">
+                <h3>Более 3000 участников</h3>
+                <p>Уже успешно прошли программу от «Стажировка» и&nbsp;остались в разных странах</p>
+              </li>
+              <li class="about__item">
+                <h3>Участники из 60 стран</h3>
+                <p>Студенты со всего мира приезжают на программу «Стажировки» от 3 месяцев до&nbsp;1 года</p>
+              </li>
+              <li class="about__item">
+                <h3>От 4 200 $<br>до 8 400 $</h3>
+                <p>Грант всем участникам для комфортного прохождения программы</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- пример использования спрайта -->
     <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>

@@ -1,0 +1,30 @@
+.button {
+  @include flex(center, center);
+  column-gap: 20px;
+  padding: 5px 5px 5px 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &--primary {
+    border: 1px solid $color-button-primary;
+    border-radius: 30px;
+  }
+}
+
+.button__text {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  color: $color-button-primary;
+  text-transform: uppercase;
+  letter-spacing: 0.24px;
+}
+
+.button__icon {
+  @include flex(center, center);
+  width: 34px;
+  height: 34px;
+  background-color: $color-button-primary;
+  border-radius: 50%;
+}
