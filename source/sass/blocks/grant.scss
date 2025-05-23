@@ -6,6 +6,10 @@
   @media (min-width: $vp-tablet) {
     padding: 100px 0;
   }
+
+  @media (min-width: $vp-desktop) {
+    padding: 120px 0;
+  }
 }
 
 .grant__wrapper {
@@ -13,6 +17,13 @@
 
   @media (min-width: $vp-tablet) {
     width: $container-tablet;
+  }
+
+  @media (min-width: $vp-desktop) {
+    display: grid;
+    grid-template-columns: repeat(2, 498px);
+    justify-content: space-between;
+    width: $container-desktop;
   }
 }
 
@@ -25,6 +36,10 @@
     font-size: 34px;
     line-height: 50px;
     margin-bottom: 30px;
+  }
+
+  @media (min-width: $vp-desktop) {
+    font-size: 50px;
   }
 }
 
@@ -85,6 +100,34 @@
       }
     }
   }
+
+  @media (min-width: $vp-desktop) {
+    p {
+      font-size: 16px;
+      line-height: 26px;
+      margin-bottom: 40px;
+    }
+
+    h3 {
+      font-size: 32px;
+      line-height: 36px;
+      padding: 10px;
+    }
+
+    &:first-of-type {
+      &::after {
+        width: 498px;
+        height: 363px;
+        margin-bottom: 40px;
+        background-image: image-set(
+          url("../../img/grant/grant-desktop@2x.webp") type("image/webp") 2x,
+          url("../../img/grant/grant-desktop@1x.webp") type("image/webp") 1x,
+          url("../../img/grant/grant-desktop@2x.png") type("image/png") 2x,
+          url("../../img/grant/grant-desktop@1x.png") type("image/png") 1x
+        );
+      }
+    }
+  }
 }
 
 .grant__list {
@@ -97,6 +140,11 @@
     column-gap: 48px;
     row-gap: 25px;
     padding-left: 20px;
+  }
+
+  @media (min-width: $vp-desktop) {
+    grid-template-columns: auto;
+    row-gap: 23px;
   }
 }
 
@@ -130,6 +178,15 @@
 
     br {
       display: inline;
+    }
+  }
+
+  @media (min-width: $vp-desktop) {
+    font-size: 16px;
+    line-height: 26px;
+
+    br {
+      display: none;
     }
   }
 }
