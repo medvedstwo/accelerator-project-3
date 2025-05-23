@@ -11,6 +11,11 @@
     border: 1px solid $color-button-primary;
     border-radius: 30px;
   }
+
+  @media (min-width: $vp-tablet) {
+    column-gap: 30px;
+    padding-left: 30px;
+  }
 }
 
 .button__text {
@@ -20,6 +25,12 @@
   color: $color-button-primary;
   text-transform: uppercase;
   letter-spacing: 0.24px;
+
+  @media (min-width: $vp-tablet) {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.28px;
+  }
 }
 
 .button__icon {
@@ -29,4 +40,9 @@
   height: 34px;
   background-color: $color-button-primary;
   border-radius: 50%;
+
+  @media (min-width: $vp-tablet) {
+    width: 46px;
+    height: 46px;
+  }
 }

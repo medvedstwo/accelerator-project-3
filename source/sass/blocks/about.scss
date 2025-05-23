@@ -1,6 +1,10 @@
 .about__wrapper {
   padding: 50px 0;
   width: $container-mobile;
+
+  @media (min-width: $vp-tablet) {
+    width: $container-tablet;
+  }
 }
 
 .about__inner {
@@ -14,6 +18,12 @@
 
   &--bg {
     background-color: $color-bg-secondary;
+  }
+
+  @media (min-width: $vp-tablet) {
+    &:not(:last-of-type) {
+    margin-bottom: 60px;
+  }
   }
 }
 
@@ -31,30 +41,63 @@
   p {
     margin: 0;
   }
+
+  @media (min-width: $vp-tablet) {
+    h3 {
+      font-size: 28px;
+      line-height: 28px;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 20px;
+      max-width: 500px;
+    }
+  }
 }
 
 .about__title {
   font-size: 20px;
   line-height: 20px;
   margin: 0 0 15px;
+
+  @media (min-width: $vp-tablet) {
+    font-size: 34px;
+    line-height: 50px;
+    margin-bottom: 30px;
+  }
 }
 
 .about__title + p {
   font-size: 16px;
   line-height: 22px;
   margin: 0;
+
+  @media (min-width: $vp-tablet) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .about__list {
   display: grid;
   row-gap: 22px;
   padding: 42px 20px 20px;
+
+  @media (min-width: $vp-tablet) {
+    grid-template-columns: repeat(2, auto);
+    column-gap: 52px;
+    row-gap: 54px;
+    padding: 72px 50px 50px 70px;
+  }
 }
 
 .about__item {
   position: relative;
   color: $color-white;
   display: grid;
+  grid-template-rows: min-content;
   row-gap: 15px;
   padding: 16px 21px;
   border: 1px solid $color-white;
@@ -88,5 +131,31 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 18px 22px;
+  }
+
+  @media (min-width: $vp-tablet) {
+    padding: 16px 21px;
+
+    h3 {
+      font-size: 20px;
+      line-height: 22px;
+      letter-spacing: 0.2px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+.about__item--members {
+  br {
+    display: none;
+  }
+
+  @media (min-width: $vp-tablet) {
+    br {
+      display: inline;
+    }
   }
 }

@@ -6,12 +6,12 @@
 .icon--about-large {
   &::after {
     content: "";
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     mask-image: url("/__spritemap#sprite-about-large-view");
     mask-position: center;
     mask-repeat: no-repeat;
-    mask-size: 10px;
+    mask-size: 8px;
     background-color: $color-white;
   }
 }
