@@ -4,16 +4,17 @@
 @import "vendor/normalize";
 @import "./vendor/nebo.css";
 
-// common 
-@import "./common/variables.scss";
-@import "./common/mixins.scss";
-@import "./common/fonts.scss";
-@import "./common/global.scss";
+// common
+@import "./common/variables";
+@import "./common/mixins";
+@import "./common/fonts";
+@import "./common/global";
 
 // blocks
 
-@import "./blocks/wrapper.scss";
-@import "./blocks/button.scss";
-@import "./blocks/list.scss";
-@import "./blocks/title.scss";
-@import "./blocks/about.scss";
+@import "./blocks/wrapper";
+@import "./blocks/button";
+@import "./blocks/icon";
+@import "./blocks/list";
+@import "./blocks/title";
+@import "./blocks/about";

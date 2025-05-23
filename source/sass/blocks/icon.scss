@@ -1,0 +1,17 @@
+.icon {
+  @include flex(center, center);
+  position: relative;
+}
+
+.icon--about-large {
+  &::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    mask-image: url("/__spritemap#sprite-about-large-view");
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: 10px;
+    background-color: $color-white;
+  }
+}

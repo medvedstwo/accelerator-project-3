@@ -1,7 +1,3 @@
-.about {
-  background-color: $color-bg-primary;
-}
-
 .about__wrapper {
   padding: 50px 0;
   width: $container-mobile;
@@ -31,7 +27,7 @@
     color: $color-text-tertiary;
     margin: 0 0 20px;
   }
-  
+
   p {
     margin: 0;
   }
@@ -56,6 +52,7 @@
 }
 
 .about__item {
+  position: relative;
   color: $color-white;
   display: grid;
   row-gap: 15px;
@@ -73,6 +70,23 @@
   p {
     font-size: 14px;
     font-weight: 300;
+    text-transform: lowercase;
     margin: 0;
+  }
+
+  &::before {
+    @include flex(center, center);
+
+    content: "";
+    position: absolute;
+    top: -21px;
+    left: -21px;
+    width: 42px;
+    height: 42px;
+    background-color: $color-bg-secondary;
+    background-image: url("/__spritemap#sprite-star-view");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 18px 22px;
   }
 }

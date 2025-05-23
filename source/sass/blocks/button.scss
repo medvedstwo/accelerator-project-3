@@ -1,5 +1,6 @@
 .button {
   @include flex(center, center);
+
   column-gap: 20px;
   padding: 5px 5px 5px 20px;
   background-color: transparent;
@@ -23,6 +24,7 @@
 
 .button__icon {
   @include flex(center, center);
+
   width: 34px;
   height: 34px;
   background-color: $color-button-primary;
