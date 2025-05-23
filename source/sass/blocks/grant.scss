@@ -1,0 +1,75 @@
+.grant {
+  color: $color-white;
+  padding: 70px 0;
+  background-color: $color-bg-secondary;
+}
+
+.grant__wrapper {
+  width: $container-mobile;
+}
+
+.grant__title {
+  font-size: 20px;
+  color: $color-white;
+  margin-bottom: 15px;
+}
+
+.grant__inner {
+  position: relative;
+
+  p {
+    margin: 0 0 30px;
+  }
+
+  h3 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 0 0 25px;
+  }
+
+  &:first-of-type {
+    &::after {
+      content: "";
+      position: relative;
+      display: flex;
+      width: 290px;
+      height: 200px;
+      margin-bottom: 30px;
+      background-image: image-set(
+        url("../../img/grant/grant-mobile@2x.webp") type("image/webp") 2x,
+        url("../../img/grant/grant-mobile@1x.webp") type("image/webp") 1x,
+        url("../../img/grant/grant-mobile@2x.png") type("image/png") 2x,
+        url("../../img/grant/grant-mobile@1x.png") type("image/png") 1x
+      );
+    }
+  }
+}
+
+.grant__list {
+  display: grid;
+  row-gap: 15px;
+  counter-reset: grant 0;
+}
+
+.grant__item {
+  position: relative;
+  padding: 25px 26px;
+  border: 1px solid $color-white;
+  counter-increment: grant 1;
+
+  &::before {
+    @include flex(center, center);
+    content: counter(grant);
+    position: absolute;
+    top: -10px;
+    left: -14px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+    width: 28px;
+    height: 32px;
+    background-color: $color-bg-secondary;
+    border-radius: 20px;
+  }
+}

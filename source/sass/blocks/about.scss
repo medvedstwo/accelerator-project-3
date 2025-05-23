@@ -18,7 +18,7 @@
   }
 
   &--round {
-    border-radius: 16px;
+    border-radius: 20px;
   }
 
   &--bg {
@@ -54,6 +54,10 @@
 
   p {
     margin: 0;
+  }
+
+  &:last-of-type {
+    margin-bottom: 30px;
   }
 
   @media (min-width: $vp-tablet) {
@@ -92,7 +96,7 @@
 .about__title {
   font-size: 20px;
   line-height: 20px;
-  margin: 0 0 15px;
+  margin-bottom: 14px;
 
   @media (min-width: $vp-tablet) {
     font-size: 34px;
@@ -103,7 +107,7 @@
   @media (min-width: $vp-desktop) {
     font-size: 50px;
     line-height: 50px;
-    margin: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -125,6 +129,8 @@
 }
 
 .about__button {
+  padding: 5px 4px 3px 20px;
+  
   @media (min-width: $vp-desktop) {
     grid-column: 2/3;
   }
@@ -133,7 +139,7 @@
 .about__list {
   display: grid;
   row-gap: 22px;
-  padding: 42px 20px 20px;
+  padding: 42px 20px 40px;
 
   @media (min-width: $vp-tablet) {
     grid-template-columns: repeat(2, auto);
@@ -154,7 +160,7 @@
   display: grid;
   grid-template-rows: min-content;
   row-gap: 15px;
-  padding: 16px 21px;
+  padding: 15px 21px 15px 20px;
   border: 1px solid $color-white;
 
   h3 {
@@ -168,7 +174,6 @@
   p {
     font-size: 14px;
     font-weight: 300;
-    text-transform: lowercase;
     margin: 0;
   }
 
@@ -177,7 +182,7 @@
 
     content: "";
     position: absolute;
-    top: -21px;
+    top: -23px;
     left: -21px;
     width: 42px;
     height: 42px;
