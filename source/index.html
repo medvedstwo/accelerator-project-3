@@ -214,7 +214,43 @@
           </div>
         </div>
       </section>
+      <section class="contacts" id="contacts" data-test="contacts">
+        <div class="contacts__wrapper wrapper">
+          <div class="contacts__inner">
+            <h2 class="contacts__title title">Контакты</h2>
+            <address class="contacts__address">
+              <ul class="contacts__list list">
+                <li class="contacts__item">
+                  <p class="contacts__item-title">Центральный офис</p>
+                  <p class="contacts__item-desc">г. Новосибирск, ул. Щетинкина 68, культурный центр</p>
+                </li>
+                <li class="contacts__item">
+                  <p class="contacts__item-title">Телефон</p>
+                  <a class="contacts__item-desc link" href="tel:896387687676">+7 963 876 876 76</a>
+                </li>
+                <li class="contacts__item">
+                  <p class="contacts__item-title">Email</p>
+                  <a class="contacts__item-desc link" href="mailto:Info@stazh.ru">Info@stazh.ru</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/contacts/map-desktop@1x.webp 1x, img/contacts/map-desktop@2x.webp 2x" width="1240" height="486">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/contacts/map-tablet@1x.webp 1x, img/contacts/map-tablet@2x.webp 2x" width="678" height="500">
+            <source type="image/webp" media="(min-width: 320px)" srcset="img/contacts/map-mobile@1x.webp 1x, img/contacts/map-mobile@2x.webp 2x" width="290" height="240">
+            <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/contacts/map-desktop@1x.jpg 1x, img/contacts/map-desktop@2x.jpg 2x" width="1240" height="486">
+            <source type="image/jpeg" media="(min-width: 768px)" srcset="img/contacts/map-tablet@1x.jpg 1x, img/contacts/map-tablet@2x.jpg 2x" width="678" height="500">
+            <img class="contacts__img" src="img/contacts/map-mobile@1x.jpg" srcset="img/contacts/map-mobile@2x.jpg 2x" alt="Расположение офиса на карте." width="290" height="240">
+          </picture>
+        </div>
+      </section>
     </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+
+      </div>
+    </footer>
     <!-- пример использования спрайта -->
     <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
@@ -222,9 +258,9 @@
     </svg> -->
     <!-- примеры требуемых атрибутов data-test="*" -->
     <!-- <div data-test="hero">hero</div> -->
-    <div data-test="about">about</div>
+    <!-- <div data-test="about">about</div> -->
     <div data-test="programs">programs</div>
-    <div data-test="grant">grant</div>
+    <!-- <div data-test="grant">grant</div> -->
     <div data-test="news">news</div>
     <div data-test="FAQ">FAQ</div>
     <div data-test="reviews">reviews</div>
