@@ -1,0 +1,11 @@
+.logo {
+  @include flex(center, center);
+}
+
+.logo__wrapper {
+  @include flex(center, center);
+  width: 52px;
+  height: 52px;
+  background-color: $color-bg-primary;
+  border-radius: 50%;
+}

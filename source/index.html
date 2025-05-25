@@ -246,27 +246,70 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="footer__wrapper">
-
+    <footer class="footer" data-test="footer">
+      <div class="footer__wrapper wrapper">
+        <div class="footer__logo logo wrapper">
+          <div class="logo__wrapper">
+            <svg width="30" height="30">
+              <use href="/__spritemap#sprite-logo"></use>
+            </svg>
+          </div>
+        </div>
+        <ul class="footer__nav-list list">
+          <li class="footer__nav-item">
+            <a class="link footer__nav-link link" href="#hero">О проекте</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="link footer__nav-link link" href="#about">Программы</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="link footer__nav-link link" href="#grant">Как поехать</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="link footer__nav-link link" href="#reviews">Отзывы</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="link footer__nav-link link" href="#news">Новости</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="link footer__nav-link link" href="#contacts">Контакты</a>
+          </li>
+        </ul>
+        <div class="footer__copyright">
+          <a class="footer__copyright-link link" href="">Политика конфиденциальности</a>
+          <p class="footer__copyright-desc">Стажировка © 2023 Все права защищены</p>
+        </div>
+        <ul class="footer__social-list list">
+          <li class="footer__social-item">
+            <a href="" class="footer__social-link footer__social-link--vk link" target="_blank" rel="noopener"></a>
+          </li>
+          <li class="footer__social-item">
+            <a href="" class="footer__social-link footer__social-link--ok link" rel="noopener"></a>
+          </li>
+          <li class="footer__social-item">
+            <a href="" class="footer__social-link footer__social-link--reddit link" rel="noopener"></a>
+          </li>
+        </ul>
       </div>
     </footer>
-    <!-- пример использования спрайта -->
-    <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg> -->
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <!-- <div data-test="hero">hero</div> -->
-    <!-- <div data-test="about">about</div> -->
-    <div data-test="programs">programs</div>
-    <!-- <div data-test="grant">grant</div> -->
-    <div data-test="news">news</div>
-    <div data-test="FAQ">FAQ</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="contacts">contacts</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
+    <div style="display: none;">
+      <!-- пример использования спрайта -->
+      <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
+      <svg>
+        <use href="/__spritemap#sprite-user"></use>
+      </svg> -->
+      <!-- примеры требуемых атрибутов data-test="*" -->
+      <!-- <div data-test="hero">hero</div> -->
+      <!-- <div data-test="about">about</div> -->
+      <div data-test="programs">programs</div>
+      <!-- <div data-test="grant">grant</div> -->
+      <div data-test="news">news</div>
+      <div data-test="FAQ">FAQ</div>
+      <div data-test="reviews">reviews</div>
+      <!-- <div data-test="contacts">contacts</div> -->
+      <div data-test="form">form</div>
+      <div data-test="footer">footer</div>
+    </div>
     <script type="module" src="js/main.js"></script>
   </body>
 
