@@ -2,10 +2,18 @@
   color: $color-white;
   padding: 70px 0;
   background-color: $color-bg-secondary;
+
+  @media (min-width: $vp-tablet) {
+    padding: 100px 0;
+  }
 }
 
 .contacts__wrapper {
   width: $container-mobile;
+
+  @media (min-width: $vp-tablet) {
+    width: $container-tablet;
+  }
 }
 
 .contacts__inner {
@@ -30,11 +38,22 @@
   color: $color-white;
   padding: 5px 0;
   margin-bottom: 30px;
+
+  @media (min-width: $vp-tablet) {
+    font-size: 34px;
+    line-height: 50px;
+  }
 }
 
 .contacts__list {
   display: grid;
   row-gap: 20px;
+
+  @media (min-width: $vp-tablet) {
+    grid-auto-flow: column;
+    grid-template-columns: auto;
+    justify-content: space-between;
+  }
 }
 
 .contacts__item {
