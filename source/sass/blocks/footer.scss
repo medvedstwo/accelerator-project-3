@@ -4,10 +4,21 @@
 
 .footer__wrapper {
   width: $container-mobile;
+
+  @media (min-width: $vp-tablet) {
+    @include flex(space-between, center);
+    row-gap: 25px;
+    flex-wrap: wrap;
+    width: $container-tablet;
+  }
 }
 
 .footer__logo {
   margin-bottom: 20px;
+
+  @media (min-width: $vp-tablet) {
+    margin: 0;
+  }
 }
 
 .footer__nav-list {
@@ -16,12 +27,25 @@
   row-gap: 20px;
   flex-wrap: wrap;
   margin-bottom: 20px;
+
+  @media (min-width: $vp-tablet) {
+    justify-content: flex-end;
+    column-gap: 15px;
+    row-gap: 15px;
+    margin: 0;
+  }
 }
 
 .footer__copyright {
   @include flex(center, center, column);
   row-gap: 13px;
   margin-bottom: 15px;
+
+  @media (min-width: $vp-tablet) {
+    align-items: flex-start;
+    row-gap: 15px;
+    margin-bottom: 0;
+  }
 }
 
 .footer__copyright-link {
@@ -94,5 +118,10 @@
       mask-image: url("/__spritemap#sprite-social-reddit-view");
       mask-size: 11px;
     }
+  }
+
+  @media (min-width: $vp-tablet) {
+    width: 36px;
+    height: 36px;
   }
 }
