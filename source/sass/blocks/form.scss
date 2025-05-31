@@ -1,0 +1,110 @@
+// .form {
+
+// }
+
+.form__wrapper {
+  padding: 43px 0 40px;
+  background-image:
+    image-set(
+      url("../../img/form/form-mobile@1x.webp") type("image/webp") 1x,
+      url("../../img/form/form-mobile@2x.webp") type("image/webp") 2x,
+      url("../../img/form/form-mobile@1x.jpg") type("image/jpeg") 1x,
+      url("../../img/form/form-mobile@2x.jpg") type("image/jpeg") 2x
+    );
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form__inner {
+  color: $color-white;
+  padding: 15px 15px 27px;
+  width: 300px;
+  background-color: $color-bg-secondary;
+  border-radius: 16px;
+
+  form {
+    @include flex(flex-start, flex-start, column);
+
+    gap: 20px;
+  }
+}
+
+.form__title {
+  font-size: 18px;
+  line-height: 22px;
+  color: $color-white;
+  margin-bottom: 10px;
+}
+
+.form__desc {
+  margin: 0 0 20px;
+}
+
+.form__container {
+  @include flex(flex-start, flex-start, column);
+
+  gap: 12px;
+  width: 100%;
+}
+
+.form__label {
+  font-size: 12px;
+  line-height: 14px;
+  opacity: 0.8;
+}
+
+.form__input {
+  color: $color-white;
+  padding: 15px 25px;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+}
+
+.form__agreement {
+  flex-direction: row-reverse;
+  align-items: center;
+
+  label {
+    cursor: pointer;
+  }
+}
+
+.form__checkbox {
+  @include flex(center, center);
+
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: $color-white;
+  border: 1px solid $color-white;
+  border-radius: 2px;
+  cursor: pointer;
+
+  &:checked {
+    background-color: $color-white;
+  }
+
+  &::after {
+    content: "";
+    mask-image: url("/__spritemap#sprite-checkmark-view");
+    mask-repeat: no-repeat;
+    background-color: $color-bg-secondary;
+  }
+
+  &:checked::after {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.form__button {
+  justify-content: space-between;
+  width: 100%;
+
+  .button__text {
+    width: 100%;
+  }
+}

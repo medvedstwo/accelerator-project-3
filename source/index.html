@@ -16,7 +16,7 @@
           <div class="logo">
             <div class="logo__wrapper">
               <svg width="30" height="30">
-                <use href="/__spritemap#sprite-logo"></use>
+                <use href="/__spritemap#sprite-a-logotype"></use>
               </svg>
             </div>
           </div>
@@ -246,9 +246,9 @@
         </div>
       </section>
       <section class="form">
-        <div class="form__wrapper wrapper">
-          <div class="form__inner">
-            <h2 class="form__title">Напишите нам</h2>
+        <div class="form__wrapper">
+          <div class="form__inner wrapper">
+            <h2 class="form__title title">Напишите нам</h2>
             <p class="form__desc">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
             <form action="https://echo.htmlacademy.ru" method="post" data-test="form">
               <div class="form__container">
@@ -264,22 +264,26 @@
                 <textarea class="form__input" name="message" id="message"></textarea>
               </div>
               <div class="form__container">
+                <label class="form__label">Выберите город</label>
                 <div class="select">
-                  <input class="select__input" type="hidden" name="">
-                    <div class="select__header form__label">Выберите город</div>
-                    <ul class="select__list" style="display: none;">
-                      <li class="select__item">Санкт-Петербург</li>
-                      <li class="select__item">Санкт-Петербург</li>
-                      <li class="select__item">Санкт-Петербург</li>
-                      <li class="select__item">Санкт-Петербург</li>
-                    </ul>
+                  <div class="select__button form__input"></div>
+                  <ul class="select__list list">
+                    <li class="select__list-item" data-value="note">Санкт-Петербург</li>
+                    <li class="select__list-item" data-value="lessons">Санкт-Петербург</li>
+                    <li class="select__list-item" data-value="photo">Санкт-Петербург</li>
+                    <li class="select__list-item" data-value="diary">Санкт-Петербург</li>
+                  </ul>
+                  <input type="text" name="select-category" value="" class="select__input-hidden">
                 </div>
               </div>
               <div class="form__container form__agreement">
-                <label class="form__label" for="agreement">Я согласен на обработку моих персональных</label>
-                <input type="checkbox" id="agreement" required>
+                <label class="form__label" for="agreement">Я согласен на обработку моих персональных <br>данных</label>
+                <input class="form__checkbox" type="checkbox" id="agreement" required>
               </div>
-              <button class="button button--secondary form__button" type="submit">Отправить</button>
+              <button class="button button--secondary form__button" type="submit">
+                  <span class="button__text">Отправить</span>
+                  <span class="button__icon icon icon--about-large"></span>
+                </button>
             </form>
           </div>
         </div>
@@ -290,7 +294,7 @@
         <div class="footer__logo logo wrapper">
           <div class="logo__wrapper">
             <svg width="30" height="30">
-              <use href="/__spritemap#sprite-logo"></use>
+              <use href="/__spritemap#sprite-a-logotype"></use>
             </svg>
           </div>
         </div>

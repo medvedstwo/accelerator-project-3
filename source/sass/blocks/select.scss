@@ -1,0 +1,70 @@
+.select {
+  position: relative;
+  width: 100%;
+}
+
+.select__button {
+  position: relative;
+  font-size: 14px;
+  line-height: 14px;
+  display: block;
+  padding: 17px 20px;
+  min-height: 50px;
+
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+
+    // Треугольник-стрелка
+    width: 0;
+    height: 0;
+    border-color: #006400 transparent transparent;
+    pointer-events: none;
+  }
+}
+
+.select__list {
+  position: absolute;
+  left: 0;
+  top: 54px;
+  z-index: 10;
+  display: none;
+  width: 100%;
+  background-color: $color-white;
+  border-radius: 8px;
+  overflow: hidden;
+
+  &--visible {
+    display: block;
+  }
+}
+
+.select__list-item {
+  font-size: 14px;
+  line-height: 14px;
+  color: $color-text-primary;
+  display: block;
+  padding: 17px 20px;
+  width: 100%;
+  background-color: $color-white;
+  cursor: pointer;
+
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-bg-secondary;
+  }
+}
+
+.select__input-hidden {
+  display: none;
+}
+
+.select__list--visible {
+  display: block;
+}
