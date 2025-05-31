@@ -245,6 +245,45 @@
           </picture>
         </div>
       </section>
+      <section class="form">
+        <div class="form__wrapper wrapper">
+          <div class="form__inner">
+            <h2 class="form__title">Напишите нам</h2>
+            <p class="form__desc">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
+            <form action="https://echo.htmlacademy.ru" method="post" data-test="form">
+              <div class="form__container">
+                <label class="form__label" for="name">Имя</label>
+                <input class="form__input" id="name" type="text" required>
+              </div>
+              <div class="form__container">
+                <label class="form__label" for="phone">Телефон</label>
+                <input class="form__input" id="phone" type="tel" required>
+              </div>
+              <div class="form__container">
+                <label class="form__label" for="message">Ваше сообщение</label>
+                <textarea class="form__input" name="message" id="message"></textarea>
+              </div>
+              <div class="form__container">
+                <div class="select">
+                  <input class="select__input" type="hidden" name="">
+                    <div class="select__header form__label">Выберите город</div>
+                    <ul class="select__list" style="display: none;">
+                      <li class="select__item">Санкт-Петербург</li>
+                      <li class="select__item">Санкт-Петербург</li>
+                      <li class="select__item">Санкт-Петербург</li>
+                      <li class="select__item">Санкт-Петербург</li>
+                    </ul>
+                </div>
+              </div>
+              <div class="form__container form__agreement">
+                <label class="form__label" for="agreement">Я согласен на обработку моих персональных</label>
+                <input type="checkbox" id="agreement" required>
+              </div>
+              <button class="button button--secondary form__button" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer" data-test="footer">
       <div class="footer__wrapper wrapper">
@@ -256,7 +295,7 @@
           </div>
         </div>
         <ul class="footer__nav-list list">
-          <li class="footer__nav-item">
+          <li class="footer__nav-item"> 
             <a class="link footer__nav-link link" href="#hero">О проекте</a>
           </li>
           <li class="footer__nav-item">
@@ -308,7 +347,7 @@
       <div data-test="reviews">reviews</div>
       <!-- <div data-test="contacts">contacts</div> -->
       <div data-test="form">form</div>
-      <div data-test="footer">footer</div>
+      <!-- <div data-test="footer">footer</div> -->
     </div>
     <script type="module" src="js/main.js"></script>
   </body>
