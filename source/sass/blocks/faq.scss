@@ -1,5 +1,9 @@
 .faq {
   padding: 50px 0;
+
+  @media (min-width: $vp-desktop) {
+    padding: 60px 0;
+  }
 }
 
 .faq__wrapper {
@@ -7,6 +11,10 @@
 
   @media (min-width: $vp-tablet) {
     width: $container-tablet;    
+  }
+
+  @media (max-width: $vp-desktop) {
+    width: 1028px;
   }
 }
 
@@ -20,6 +28,12 @@
     font-size: 34px;
     line-height: 50px;
     margin-bottom: 40px;
+  }
+
+  @media (min-width: $vp-desktop) {
+    font-size: 50px;
+    padding: 11px 9px;
+    margin-bottom: 60px;
   }
 }
 
@@ -45,6 +59,10 @@
 
   @media (min-width: $vp-tablet) {
     padding: 32px
+  }
+
+  @media (min-width: $vp-desktop) {
+    padding: 42px;
   }
 }
 
@@ -72,6 +90,15 @@
 
     br {
       display: inline;
+    }
+  }
+
+  @media (min-width: $vp-desktop) {
+    font-size: 28px;
+    line-height: 34px;
+
+    br {
+      display: none;
     }
   }
 }
@@ -139,6 +166,14 @@
 
     br {
       display: inline;
+    }
+  }
+
+  @media (min-width: $vp-desktop) {
+    line-height: 26px;
+
+    br {
+      display: none;
     }
   }
 }
