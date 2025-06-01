@@ -1,6 +1,8 @@
-// .form {
-
-// }
+.form {
+  @media (min-width: $vp-tablet) {
+    padding: 50px 0;
+  }
+}
 
 .form__wrapper {
   padding: 43px 0 40px;
@@ -14,6 +16,20 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-width: $vp-tablet) {
+    padding: 0;
+    margin: 0 auto;
+    width: 652px;
+    border-radius: 16px;
+    background-image:
+    image-set(
+      url("../../img/form/form-tablet@1x.webp") type("image/webp") 1x,
+      url("../../img/form/form-tablet@2x.webp") type("image/webp") 2x,
+      url("../../img/form/form-tablet@1x.jpg") type("image/jpeg") 1x,
+      url("../../img/form/form-tablet@2x.jpg") type("image/jpeg") 2x
+    );
+  }
 }
 
 .form__inner {
@@ -28,6 +44,12 @@
 
     gap: 20px;
   }
+
+  @media (min-width: $vp-tablet) {
+    margin: 0;
+    padding: 30px 40px 36px;
+    width: 442px;
+  }
 }
 
 .form__title {
@@ -35,10 +57,21 @@
   line-height: 22px;
   color: $color-white;
   margin-bottom: 10px;
+
+  @media (min-width: $vp-tablet) {
+    font-size: 28px;
+    line-height: 28px;
+    margin-bottom: 31px;
+  }
 }
 
 .form__desc {
   margin: 0 0 20px;
+
+  @media (min-width: $vp-tablet) {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
 }
 
 .form__container {
@@ -69,6 +102,19 @@
 
   label {
     cursor: pointer;
+  }
+
+  @media (min-width: $vp-tablet) {
+    gap: 10px;
+    justify-content: flex-end;
+    
+    label {
+      width: 100%;
+    }
+
+    br {
+      display: none
+    }
   }
 }
 
@@ -106,5 +152,9 @@
 
   .button__text {
     width: 100%;
+  }
+
+  @media (min-width: $vp-tablet) {
+    max-width: 352px;
   }
 }
