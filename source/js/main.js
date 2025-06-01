@@ -3,6 +3,8 @@
 // import {Navigation, Pagination} from "swiper/modules";
 // import 'swiper/css';
 
+import initAccordion from './accordion.js';
+
 // получаем все элементы селекта
 const select = document.querySelector('.select');
 const selectButton = select.querySelector('.select__button');
@@ -70,4 +72,8 @@ document.addEventListener('click', function(event) {
       selectList.classList.remove('select__list--visible');
     }
   });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  initAccordion();
 });

@@ -27,23 +27,23 @@
     width: 652px;
     border-radius: 16px;
     background-image:
-    image-set(
-      url("../../img/form/form-tablet@1x.webp") type("image/webp") 1x,
-      url("../../img/form/form-tablet@2x.webp") type("image/webp") 2x,
-      url("../../img/form/form-tablet@1x.jpg") type("image/jpeg") 1x,
-      url("../../img/form/form-tablet@2x.jpg") type("image/jpeg") 2x
-    );
+      image-set(
+        url("../../img/form/form-tablet@1x.webp") type("image/webp") 1x,
+        url("../../img/form/form-tablet@2x.webp") type("image/webp") 2x,
+        url("../../img/form/form-tablet@1x.jpg") type("image/jpeg") 1x,
+        url("../../img/form/form-tablet@2x.jpg") type("image/jpeg") 2x
+      );
   }
 
   @media (min-width: $vp-desktop) {
     width: $container-desktop;
     background-image:
-    image-set(
-      url("../../img/form/form-desktop@1x.webp") type("image/webp") 1x,
-      url("../../img/form/form-desktop@2x.webp") type("image/webp") 2x,
-      url("../../img/form/form-desktop@1x.jpg") type("image/jpeg") 1x,
-      url("../../img/form/form-desktop@2x.jpg") type("image/jpeg") 2x
-    );
+      image-set(
+        url("../../img/form/form-desktop@1x.webp") type("image/webp") 1x,
+        url("../../img/form/form-desktop@2x.webp") type("image/webp") 2x,
+        url("../../img/form/form-desktop@1x.jpg") type("image/jpeg") 1x,
+        url("../../img/form/form-desktop@2x.jpg") type("image/jpeg") 2x
+      );
   }
 }
 
@@ -143,13 +143,13 @@
     gap: 10px;
     justify-content: flex-end;
     margin-bottom: 20px;
-    
+
     label {
       width: 100%;
     }
 
     br {
-      display: none
+      display: none;
     }
   }
 }
